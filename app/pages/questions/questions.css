@@ -10,6 +10,7 @@
   horizontal-align: left;
   font-family: "Courier New", Courier, monospace;
   padding: 5px;
+  width: 100%;
 }
 .selectedQuestion{
   font-size: 17;

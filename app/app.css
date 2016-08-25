@@ -1,6 +1,6 @@
 ActionBar {
-    padding-top: 5;
+    padding-top: 12;
     color: white;
-    background-color: #A52A2A;
+    background-color: rgb(80,0,0);
     font-family: "Courier New", Courier, monospace;
 }
