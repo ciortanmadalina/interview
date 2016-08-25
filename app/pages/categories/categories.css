@@ -1,0 +1,16 @@
+.small-spacing {
+  margin: 5;
+}
+.medium-spacing {
+  margin: 10;
+}
+Label{
+  font-size: 20;
+  color:black;
+  horizontal-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+ActionBar {
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+}

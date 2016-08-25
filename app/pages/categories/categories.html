@@ -1,0 +1,8 @@
+<ActionBar title="Categories"></ActionBar>
+<GridLayout>
+  <ListView [items]="categoriesList" class="small-spacing">
+    <template let-item="item" >
+      <Label [text]="item.name" nsRouterLinkActive="active" class="medium-spacing" [nsRouterLink]="['/questions', item.id]"></Label>
+    </template>
+  </ListView>
+</GridLayout>
