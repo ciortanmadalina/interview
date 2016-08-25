@@ -2,6 +2,13 @@
     <NavigationButton text="First" android.systemIcon="ic_menu_back" nsRouterLink="/categories" ></NavigationButton>
 </ActionBar>
 
-<StackLayout>
-    <Label [text]="title"></Label>
-</StackLayout>
+<GridLayout>
+    <ListView [items]="questionsList" class="small-spacing">
+      <template let-item="item" >
+        <StackLayout>
+          <Label [text]="item.question" class="question"></Label>
+          <Label [text]="item.answer" class="answer"></Label>
+        </StackLayout>
+      </template>
+    </ListView>
+</GridLayout>
