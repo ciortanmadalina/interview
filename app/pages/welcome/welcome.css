@@ -1,15 +1,16 @@
 Label{
   font-size: 20;
-  color:black;
+  color:white;
   horizontal-align: right;
   font-family: "Courier New", Courier, monospace;
 }
 
-
-StackLayout {
+.parent{
+  background-color: #A52A2A;
+}
+.child {
   margin-top: 35%;
   margin-left: 30;
   margin-right: 10;
   padding-bottom: 15;
-
 }

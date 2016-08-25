@@ -3,10 +3,6 @@ import {Page} from "ui/page";
 import {Router} from "@angular/router";
 import {NS_DIRECTIVES} from "nativescript-angular/directives";
 
-//var labelModule = require("ui/label");
-//var label = new labelModule.Label();
-//var gestures = require("ui/gestures");
-
 @Component({
     selector: "welcome",
     templateUrl: "pages/welcome/welcome.html",

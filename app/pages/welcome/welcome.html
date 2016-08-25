@@ -1,3 +1,5 @@
-  <StackLayout class="stack-class" (tap)="goToCategories()" (swipe)="goToCategories()">
+<StackLayout class="parent" (tap)="goToCategories()" >
+  <StackLayout class="child" (swipe)="goToCategories()">
       <Label text="Technical Interview(Q&A);"></Label>
   </StackLayout>
+</StackLayout>

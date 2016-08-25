@@ -1,11 +1,6 @@
-.title {
-    font-size: 30;
-    margin: 20;
-}
-
-.message {
-    font-size: 20;
-    color: #284848;
-    text-align: center;
-    margin: 0 20;
+ActionBar {
+    padding-top: 5;
+    color: white;
+    background-color: #A52A2A;
+    font-family: "Courier New", Courier, monospace;
 }
