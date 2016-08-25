@@ -19,6 +19,7 @@ export class QuestionsComponent implements OnInit {
   category:Category;
   id: number;
   questionsList: Array<Question> = [];
+  selectedQ:number;
   constructor(private _categoryService: CategoryService, route: ActivatedRoute, private _questionService: QuestionService) {
     this.id = Number(route.snapshot.params['id']);
     this._categoryService.getCategory(this.id).then(data => this.title = data.name + ' Questions' );
@@ -27,7 +28,7 @@ export class QuestionsComponent implements OnInit {
     this._questionService.getAll().then(data => this.questionsList = data);
   }
 
-  public goToQuestions(category){
-    alert(category.name);
+  public answer(id){
+    this.selectedQ = id;
   }
 }

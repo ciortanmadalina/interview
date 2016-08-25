@@ -5,15 +5,23 @@
   margin: 10;
 }
 .question{
-  font-size: 18;
+  font-size: 17;
   color:black;
   horizontal-align: left;
-  font-weight: bold;
   font-family: "Courier New", Courier, monospace;
+  padding: 5px;
+}
+.selectedQuestion{
+  font-size: 17;
+  color:green;
+  horizontal-align: left;
+  font-family: "Courier New", Courier, monospace;
+  padding: 5px;
 }
 .answer{
   font-size: 16;
   color:black;
   horizontal-align: left;
   font-family: "Courier New", Courier, monospace;
+  font-style: italic;
 }
