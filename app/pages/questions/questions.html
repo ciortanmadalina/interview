@@ -6,8 +6,8 @@
     <ListView [items]="questionsList" class="small-spacing">
       <template let-item="item" let-i="index">
         <StackLayout>
-          <Label [text]="(i + 1) + '.' +  item.question" (tap)="answer(item.id)" cssClass="{{ selectedQ === item.id ? 'selectedQuestion' : 'question' }}"></Label>
-          <Label [text]="item.answer" class="answer" visibility="{{ selectedQ === item.id ? 'visible' : 'collapsed' }}"></Label>
+          <Label [text]="(i + 1) + '.' +  item.question" (tap)="answer(item.id)" cssClass="{{ selectedQ === item.id ? 'selectedQuestion' : 'question' }}" textWrap="true"></Label>
+          <answer [message]="item.answer" [isVisible]="selectedQ === item.id"></answer>
         </StackLayout>
       </template>
     </ListView>

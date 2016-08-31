@@ -12,7 +12,7 @@ export class CategoryService {
   load() {
     return Promise.resolve(CATEGORIES);
   }
-  getCategory(id: number){
+  getCategory(id: string){
     return this.load()
              .then(categories => categories.filter(cat => cat.id === id)[0]);
   }

@@ -7,28 +7,34 @@ import {ActivatedRoute, Router} from "@angular/router";
 import { Observable } from "rxjs";
 import {NS_DIRECTIVES} from "nativescript-angular/directives";
 import { NS_ROUTER_DIRECTIVES, nsProvideRouter} from "nativescript-angular/router";
+import {AnswerComponent} from "./answer.component";
 @Component({
   selector: "questions",
   templateUrl: "pages/questions/questions.html",
   styleUrls: ["pages/questions/questions.css"],
   providers: [CategoryService, QuestionService],
-  directives:[NS_ROUTER_DIRECTIVES, NS_DIRECTIVES]
+  directives:[NS_ROUTER_DIRECTIVES, NS_DIRECTIVES, AnswerComponent]
 })
 export class QuestionsComponent implements OnInit {
   title: String;
   category:Category;
-  id: number;
+  catId: string;
   questionsList: Array<Question> = [];
   selectedQ:number;
   constructor(private _categoryService: CategoryService, route: ActivatedRoute, private _questionService: QuestionService) {
-    this.id = Number(route.snapshot.params['id']);
-    this._categoryService.getCategory(this.id).then(data => this.title = data.name + ' Questions' );
+    this.catId = route.snapshot.params['id'];
+    this._categoryService.getCategory(this.catId).then(data => this.title = data.name + ' Questions' );
   }
   ngOnInit() {
-    this._questionService.getAll().then(data => this.questionsList = data);
+    this._questionService.getQuestionsByCategory(this.catId).then(data => this.questionsList = data);
   }
 
   public answer(id){
-    this.selectedQ = id;
+    if (this.selectedQ != null && this.selectedQ == id) {
+      this.selectedQ = -1;
+    }
+    else{
+      this.selectedQ = id;
+    }
   }
 }

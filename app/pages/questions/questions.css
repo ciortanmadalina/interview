@@ -26,3 +26,10 @@
   font-family: "Courier New", Courier, monospace;
   font-style: italic;
 }
+WebView{
+  font-size: 16;
+  color:red;
+  horizontal-align: left;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+}

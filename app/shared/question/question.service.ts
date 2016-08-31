@@ -12,9 +12,9 @@ export class QuestionService {
   getAll() {
     return Promise.resolve(QUESTIONS);
   }
-  getCategory(catId: number){
+  getQuestionsByCategory(catId: string){
     return this.getAll()
-             .then(questions => questions.filter(question => question.categoryId === catId)[0]);
+             .then(questions => questions.filter(question => question.categoryId === catId));
   }
 
   handleErrors(error: Response) {
