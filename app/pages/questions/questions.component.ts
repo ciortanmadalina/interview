@@ -8,6 +8,7 @@ import { Observable } from "rxjs";
 import {NS_DIRECTIVES} from "nativescript-angular/directives";
 import { NS_ROUTER_DIRECTIVES, nsProvideRouter} from "nativescript-angular/router";
 import {AnswerComponent} from "./answer.component";
+require( "nativescript-orientation" );
 @Component({
   selector: "questions",
   templateUrl: "pages/questions/questions.html",

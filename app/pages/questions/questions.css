@@ -5,7 +5,7 @@
   margin: 10;
 }
 .question{
-  font-size: 17;
+  font-size: 15;
   color:black;
   horizontal-align: left;
   font-family: "Courier New", Courier, monospace;
@@ -13,23 +13,21 @@
   width: 100%;
 }
 .selectedQuestion{
-  font-size: 17;
+  font-size: 15;
   color:green;
   horizontal-align: left;
   font-family: "Courier New", Courier, monospace;
   padding: 5px;
 }
 .answer{
-  font-size: 16;
+  font-size: 13;
+  horizontal-align: left;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  padding-bottom: 10;
   color:black;
-  horizontal-align: left;
-  font-family: "Courier New", Courier, monospace;
-  font-style: italic;
 }
-WebView{
-  font-size: 16;
-  color:red;
-  horizontal-align: left;
-  font-family: "Courier New", Courier, monospace;
-  font-style: italic;
+
+.border{
+  margin-bottom: 40;
 }

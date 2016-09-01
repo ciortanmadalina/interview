@@ -3,7 +3,7 @@
 </ActionBar>
 
 <GridLayout>
-    <ListView [items]="questionsList" class="small-spacing">
+    <ListView [items]="questionsList" class="small-spacing border">
       <template let-item="item" let-i="index">
         <StackLayout>
           <Label [text]="(i + 1) + '.' +  item.question" (tap)="answer(item.id)" cssClass="{{ selectedQ === item.id ? 'selectedQuestion' : 'question' }}" textWrap="true"></Label>

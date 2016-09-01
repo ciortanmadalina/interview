@@ -10,6 +10,9 @@ Domains:
 - Software Methodologies
 - Design Patterns
 - Algorithms
+- Technologies  
+
+The first version reads input data from JSON files, the second version will connect to a backend and a database.
 
 
 ### Build and run application
@@ -17,9 +20,5 @@ tns run android
 tns livesync android --watch
 
 
-Create new nativescript project : tns create interview --ng  
-tns platform add android
-
-
 ### Useful nativescript & angular2 links
-Native script tutorial : http://docs.nativescript.org/angular/tutorial/ng-chapter-0  
+Native script tutorial and documentation : http://docs.nativescript.org/angular/tutorial/ng-chapter-0  
